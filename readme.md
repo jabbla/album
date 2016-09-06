@@ -9,7 +9,9 @@
 var album = new MutiAlbum();
 ```
 ### 创建布局
+
 > 对于config对象，下面有详细介绍
+
 ```js
 //创建拼图布局
 var puzzle = album.Puzzle(config)
@@ -19,6 +21,7 @@ var waterfall = album.Waterfall(config)
 var barrel = album.Barrel(config)
 ```
 ## config对象
+
 ```js
 //config对象
 {   
@@ -46,13 +49,16 @@ var barrel = album.Barrel(config)
 }
 ```
 ### 添加图片
+
 > picArray结构与config对象中pictures一致
+
 ```js
 puzzle.add(picArray)        
 waterfall.add(picArray)
 barrel.add(picArray)
 ```
 ### 渲染布局
+
 ```js
 puzzle.render()
 waterfall.render()
@@ -60,13 +66,16 @@ barrel.render()
 ```
 ## 杂项
 ###  获取当前布局所有图片的包裹元素
+
 > 返回元素数组
+
 ```js
 puzzle.getWrapers()
 waterfall.getWrapers()
 barrel.getWrapers()
 ```
 ### 命名类空间
+
 > 自定义类空间,根据自定义类重写样式
 
 ```js
